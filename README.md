@@ -6,7 +6,7 @@ A convinient, helpful, comprehansive timeseires visualization tool
 
 ### Install and Run
 ```bash
-clone https://github.com/AllenLeong/timeseries-compass.git
+git clone https://github.com/AllenLeong/timeseries-compass.git
 cd timeseries-compass
 npm install
 npm run dev
