@@ -4,7 +4,7 @@
 # Times Series Compass
 A convinient, helpful, comprehansive timeseires visualization tool
 
-### Install
+### Install and Run
 ```bash
 clone https://github.com/AllenLeong/timeseries-compass.git
 cd timeseries-compass
