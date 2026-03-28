@@ -3,7 +3,7 @@
 
 # Times Series 
 Compass
-A convinient, helpful, comprehansive timeseires visulization tool
+A convinient, helpful, comprehansive timeseires visualization tool
 
 ### Install
 ```bash
