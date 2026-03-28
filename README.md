@@ -1,4 +1,4 @@
-<img width="4096" height="992" alt="Gemini_Generated_Image)" src="https://github.com/user-attachments/assets/e47012eb-964a-4bdf-811f-06a0e7a07e7d" />
+<img width="4096" height="992" alt="Gemini_Generated_Image_xn31txn31txn31tx" src="https://github.com/user-attachments/assets/e8c7dc33-caf3-40a7-b2da-f269d94ab8e6" />
 
 # Times Series Compass
 A convinient, helpful, comprehansive timeseires visulization tool
