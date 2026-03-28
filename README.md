@@ -1,8 +1,7 @@
 
 <img width="1024" height="248" alt="compressed_微信图片_20260329005459_53_2" src="https://github.com/user-attachments/assets/d03771dd-3261-4537-8d0b-768347aa4549" />
 
-# Times Series 
-Compass
+# Times Series Compass
 A convinient, helpful, comprehansive timeseires visualization tool
 
 ### Install
