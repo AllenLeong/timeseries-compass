@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Brand: #1E5EB1 blue with #4C3AB8 accent */
+    --background: 218 25% 95%;
+    --foreground: 218 25% 12%;
+    --card: 218 20% 98%;
+    --card-foreground: 218 25% 12%;
+    --popover: 218 20% 98%;
+    --popover-foreground: 218 25% 12%;
+    --primary: 215 71% 41%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 218 18% 90%;
+    --secondary-foreground: 218 15% 35%;
+    --muted: 218 15% 93%;
+    --muted-foreground: 218 10% 45%;
+    --accent: 249 52% 92%;
+    --accent-foreground: 249 52% 47%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 218 20% 0% / 0.05;
+    --input: 218 20% 0% / 0.05;
+    --ring: 215 71% 41%;
+    --radius: 1rem;
+    --chart-1: 215 71% 41%;
+    --chart-2: 190 80% 45%;
+    --chart-3: 32 95% 52%;
+    --chart-4: 249 52% 47%;
+    --chart-5: 340 75% 55%;
+
+    --sidebar-background: 218 20% 98% / 0.70;
+    --sidebar-foreground: 218 25% 12%;
+    --sidebar-primary: 215 71% 41%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 215 50% 92%;
+    --sidebar-accent-foreground: 215 71% 41%;
+    --sidebar-border: 218 20% 0% / 0.06;
+    --sidebar-ring: 215 71% 41%;
+
+    --font-sans: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', system-ui, 'Helvetica Neue', sans-serif;
+    --font-mono: 'SF Mono', 'IBM Plex Mono', ui-monospace, monospace;
+
+    /* Liquid Glass Material Tokens — Light */
+    --glass-bg: 218 20% 100% / 0.60;
+    --glass-bg-hover: 218 20% 100% / 0.75;
+    --glass-bg-active: 218 20% 100% / 0.85;
+    --glass-border: 218 20% 0% / 0.04;
+    --glass-border-subtle: 218 20% 0% / 0.02;
+    --glass-highlight: 0 0% 100% / 0.90;
+    --glass-blur: 40px;
+    --glass-blur-heavy: 80px;
+    --glass-saturate: 180%;
+
+    --shadow-soft: 0 1px 3px hsl(218 30% 20% / 0.06), 0 1px 2px hsl(218 30% 20% / 0.04);
+    --shadow-medium: 0 4px 16px -2px hsl(218 30% 20% / 0.10), 0 2px 4px hsl(218 30% 20% / 0.06);
+    --shadow-elevated: 0 12px 40px -8px hsl(218 30% 20% / 0.15), 0 4px 12px -4px hsl(218 30% 20% / 0.08);
+    --shadow-glass-inset: inset 0 1px 0 0 hsl(0 0% 100% / 0.7), inset 0 -1px 0 0 hsl(218 20% 0% / 0.02);
+  }
+
+  .dark {
+    /* Brand: #1E5EB1 blue — Dark mode */
+    --background: 220 12% 12%;
+    --foreground: 220 10% 92%;
+    --card: 220 10% 16%;
+    --card-foreground: 220 10% 92%;
+    --popover: 220 10% 16%;
+    --popover-foreground: 220 10% 92%;
+    --primary: 215 71% 52%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 220 10% 19%;
+    --secondary-foreground: 220 8% 65%;
+    --muted: 220 10% 15%;
+    --muted-foreground: 220 6% 52%;
+    --accent: 249 40% 25%;
+    --accent-foreground: 249 52% 70%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 220 20% 50% / 0.10;
+    --input: 220 20% 50% / 0.10;
+    --ring: 215 71% 52%;
+    --chart-1: 215 71% 52%;
+    --chart-2: 190 80% 55%;
+    --chart-3: 38 100% 58%;
+    --chart-4: 249 52% 58%;
+    --chart-5: 340 75% 60%;
+
+    --sidebar-background: 220 10% 13% / 0.80;
+    --sidebar-foreground: 220 10% 92%;
+    --sidebar-primary: 215 71% 52%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 220 10% 20%;
+    --sidebar-accent-foreground: 220 10% 92%;
+    --sidebar-border: 220 10% 50% / 0.12;
+    --sidebar-ring: 215 71% 52%;
+
+    --glass-bg: 220 10% 17% / 0.65;
+    --glass-bg-hover: 220 8% 21% / 0.70;
+    --glass-bg-active: 220 8% 25% / 0.75;
+    --glass-border: 220 10% 45% / 0.10;
+    --glass-border-subtle: 220 8% 55% / 0.05;
+    --glass-highlight: 215 60% 70% / 0.06;
+    --glass-blur: 40px;
+    --glass-blur-heavy: 80px;
+    --glass-saturate: 160%;
+
+    --shadow-soft: 0 1px 2px hsl(220 30% 5% / 0.20);
+    --shadow-medium: 0 4px 16px -2px hsl(220 30% 5% / 0.30), 0 1px 2px hsl(220 30% 5% / 0.15);
+    --shadow-elevated: 0 12px 40px -8px hsl(220 30% 5% / 0.40), 0 4px 12px -4px hsl(220 30% 5% / 0.20);
+    --shadow-glass-inset: inset 0 1px 0 0 hsl(215 60% 70% / 0.08), inset 0 -1px 0 0 hsl(220 30% 5% / 0.08);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    letter-spacing: -0.01em;
+  }
+  code, .font-mono {
+    font-family: var(--font-mono);
+  }
+}
+
+@layer components {
+  /* ═══ iOS 26 Liquid Glass — Primary Material ═══ */
+  .glass-panel {
+    position: relative;
+    background: hsl(var(--glass-bg));
+    backdrop-filter: blur(var(--glass-blur)) saturate(var(--glass-saturate));
+    -webkit-backdrop-filter: blur(var(--glass-blur)) saturate(var(--glass-saturate));
+    border: 0.5px solid hsl(var(--glass-border-subtle));
+    border-radius: var(--radius);
+    box-shadow:
+      var(--shadow-soft),
+      var(--shadow-glass-inset);
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+  }
+  .glass-panel:hover {
+    background: hsl(var(--glass-bg-hover));
+  }
+
+  /* ═══ Elevated Glass — Modals, Popovers ═══ */
+  .glass-elevated {
+    position: relative;
+    background: hsl(var(--glass-bg));
+    backdrop-filter: blur(var(--glass-blur-heavy)) saturate(200%);
+    -webkit-backdrop-filter: blur(var(--glass-blur-heavy)) saturate(200%);
+    border: 0.5px solid hsl(var(--glass-border));
+    border-radius: var(--radius);
+    box-shadow:
+      var(--shadow-elevated),
+      var(--shadow-glass-inset);
+  }
+
+  /* ═══ Liquid Glass Highlight — Top Edge Gleam ═══ */
+  .glass-panel::before,
+  .glass-elevated::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    pointer-events: none;
+    background: linear-gradient(
+      180deg,
+      hsl(var(--glass-highlight)) 0%,
+      transparent 40%
+    );
+    mask: linear-gradient(180deg, black 0%, transparent 30%);
+    -webkit-mask: linear-gradient(180deg, black 0%, transparent 30%);
+    opacity: 0.5;
+  }
+
+  .data-cell {
+    @apply px-3 py-2 text-sm font-mono tabular-nums;
+  }
+
+  /* ═══ iOS Pill Navigation ═══ */
+  .nav-item {
+    @apply px-3.5 py-1.5 text-[13px] font-medium rounded-full transition-all duration-300;
+    color: hsl(var(--muted-foreground));
+  }
+  .nav-item:hover {
+    color: hsl(var(--foreground));
+    background: hsl(var(--glass-bg));
+  }
+  .nav-item-active {
+    color: hsl(var(--primary));
+    background: hsl(var(--glass-bg-active));
+    box-shadow: var(--shadow-glass-inset);
+    font-weight: 600;
+  }
+
+  /* ═══ Glass Table Row Hover ═══ */
+  .glass-row {
+    @apply transition-all duration-200;
+  }
+  .glass-row:hover {
+    background: hsl(var(--glass-bg));
+    box-shadow: var(--shadow-soft);
+  }
+}
+
+/* ═══ Custom Scrollbar — iOS Thin Style ═══ */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  @apply rounded-full;
+  background: hsl(0 0% 0% / 0.12);
+}
+.dark ::-webkit-scrollbar-thumb {
+  background: hsl(0 0% 100% / 0.12);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(0 0% 0% / 0.25);
+}
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: hsl(0 0% 100% / 0.25);
+}
+
+/* iOS Selection */
+::selection {
+  background: hsl(211 100% 50% / 0.18);
+}
+
+/* ═══ Spring Animation Keyframes ═══ */
+@keyframes glass-appear {
+  0% { opacity: 0; transform: scale(0.96) translateY(4px); }
+  60% { transform: scale(1.01) translateY(-1px); }
+  100% { opacity: 1; transform: scale(1) translateY(0); }
+}
+@keyframes glass-morph {
+  0% { border-radius: 12px; }
+  50% { border-radius: 20px; }
+  100% { border-radius: var(--radius); }
+}
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.animate-glass-appear {
+  animation: glass-appear 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
